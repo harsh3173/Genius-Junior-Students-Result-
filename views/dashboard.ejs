@@ -1,0 +1,61 @@
+<%- include('partials/header') %>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <img id="logo" src="images/Mindspark.jpg" alt="">
+  <div class="centered container">
+    <h1 id="dashboard">Welcome  </h1>
+    <h3 class="display-1" id="name"><%=firstName %> <%=lastName %></h3>
+    <hr /><br>
+    <table id= "table"align="center">
+      <tr>
+        <td><p class="lead mb-3">Marks   : </p></td>
+        <td><p class="lead mb-3"> <%= marks%>/100 </p></td>
+      </tr>
+      <tr>
+        <td><p class="lead mb-4">Standard  : </p></td>
+        <td><p class="lead mb-4"> <%= standard %>th </p></td>
+      </tr>
+      <tr>
+        <td><p class="lead mb-4">School  : </p></td>
+        <td><p class="lead mb-4"> <%= school %> </p></td>
+      </tr>
+    </table>
+<br><br>
+    <section >
+      <canvas id="canvas" width="1000" height="800">
+        <img id = "certificate"src="images/certificate.jpg" alt="image not found">
+      </canvas>
+    </section> <br>
+      <a  id="download" download="certificate.png" role="button">
+      <button class="btn btn-dark btn-block" type="button" onClick="download()" >Download</button>
+      </a>
+      <a class="btn btn-light btn-block" href="/logout" role="button">Log Out</a>
+      <br><br>
+
+    </div>
+
+
+<script>
+window.onload = function() {
+  var c = document.getElementById("canvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("certificate");
+  ctx.drawImage(img, 0, 0,1000,800);
+  ctx.font = "30px Arial";
+  ctx.fillText(" <%=firstName %> <%=lastName%>", 370, 400);
+  ctx.font = "18px Arial";
+  ctx.fillText("Application No :  <%=username%>", 720 , 750);
+}
+
+function download() {
+var download = document.getElementById("download");
+var image = document.getElementById("canvas").toDataURL("image/png")
+    .replace("image/png", "image/octet-stream");
+download.setAttribute("href", image);
+}
+
+</script>
+
+<%- include('partials/footer') %>

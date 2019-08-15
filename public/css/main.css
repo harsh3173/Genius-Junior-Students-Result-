@@ -1,0 +1,246 @@
+//New Styling
+@import url('https://rsms.me/inter/inter-ui.css');
+::selection {
+  background: #2D2F36;
+}
+::-webkit-selection {
+  background: #2D2F36;
+}
+::-moz-selection {
+  background: #2D2F36;
+}
+body {
+  background: white;
+  font-family: 'Inter UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #9053c7;
+background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+background: linear-gradient( -135deg,#c850c0, #4158d0);
+}
+
+@media (max-width: 905px) {
+  body {
+    background: white;
+    padding: 0;
+  }
+}
+.page {
+  background: #e2e2e5;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-left: 14%;
+  margin-top:5%;
+  height: 70%;
+  position: absolute;
+  place-content: center;
+  width: 70%;
+}
+@media (max-width: 767px) {
+  .page {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.container {
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+  padding: 30px;
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0;
+    height: 1310px;
+    flex-direction: column;
+  }
+}
+.left {
+  background: white;
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .left {
+    height: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 270px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .right {
+    top:auto;
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
+
+.login100-pic img {
+  max-width: 100%;
+}
+
+.login {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+}
+.eula {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 40px;
+}
+
+@media (min-width: 767px) {
+.right {
+  background: #474A59;
+  color: #F1F1F2;
+  position: relative;
+  width: 50%;
+}
+}
+.right {
+  background: #474A59;
+  color: #F1F1F2;
+  position: relative;
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .right {
+    flex-shrink: 0;
+    height: 55%;
+    width: 100%;
+    margin-top: 35% !important;
+  }
+  }
+
+svg {
+  position: absolute;
+}
+
+path {
+  fill: none;
+  stroke: url(#linearGradient);;
+  stroke-width: 4;
+  stroke-dasharray: 240 1386;
+}
+.form {
+  margin: 40px;
+  position: absolute;
+}
+
+@media (max-width: 767px) {
+  .form{
+    margin: 5%;
+    width: 90%;
+  }
+}
+label {
+  color:  #c2c2c5;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 14px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+td{
+text-align: center;
+}
+
+@media (max-width: 767px) {
+  label {
+    color:  #c2c2c5;
+    display: block;
+    font-size: 1.5rem;
+    height:1.5rem;
+    margin-top: 2.2rem;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+
+td{
+text-align: center;
+padding-top: 3rem;
+}
+
+#firstName{
+  font-size: 2.5rem;
+  height:2.5rem;
+  margin-top: 2.5rem;
+  padding: 1rem;
+}
+#lastName{
+  font-size: 2.5rem;
+  height:2.5rem;
+  margin-top: 2.5rem;
+  padding: 1rem;
+}
+#username{
+  font-size: 2.5rem;
+  height:2.5rem;
+  margin-top: 2.5rem;
+  padding: 1rem;
+}
+
+#submit{
+font-size: 3.5rem;
+height: 3.5rem;
+margin-top: 5.5rem  !important;
+
+}
+
+}
+
+input {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+  text-align: center;
+}
+input::-moz-focus-inner {
+  border: 0;
+}
+#submit {
+  color: #707075;
+  margin-top: 33px;
+  transition: color 300ms;
+}
+@media (max-width: 767px) {
+  #submit {
+    color: #707075;
+    margin-top: 30px;
+    transition: color 300ms;
+  }
+}
+
+#submit:focus {
+  color: #f2f2f2;
+}
+#submit:active {
+  color: #d0d0d2;
+}

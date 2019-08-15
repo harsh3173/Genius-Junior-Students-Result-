@@ -1,0 +1,97 @@
+body {
+  background-color: #FFFFFF;
+}
+
+td {
+  padding-left:  20px;
+    padding-right:  20px;
+}
+
+.form-control {
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.lead {
+  font-size: 1.6rem;
+  color: #5B5B5B;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  background-color: #FFFFFF;
+}
+
+.jumbotron {
+  background-color: #ffffff;
+}
+
+#name {
+ color: #5B5B5B;
+  font-size: 3rem;
+}
+
+.centered {
+  padding-top: 5rem;
+    text-align: center;
+}
+
+#welcome {
+  margin: 1rem;
+  padding-top: 8rem;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+.logout{
+  padding: 2rem;
+}
+
+#canvas {
+  width: 100%;
+  padding-left: 1rem;
+}
+
+#Oops {
+  padding: 3rem;
+}
+#logo {
+  position: absolute;
+  width: 8rem;
+  right: 2rem;
+  top: 2rem;
+}
+#certificate {
+  width: 40rem;
+  align: center;
+}
+@media (max-width: 43.75rem) {
+  a {
+    margin-top:  7px;
+  }
+  #logo {
+    position: absolute;
+    width: 50%;
+    margin-left: 32%;
+    margin-right: 18%;
+  }
+  #canvas {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    align: center
+  }
+  #dashboard {
+    margin-top: 55%;
+  }
+  #welcome{
+    margin-top: 30%;
+    padding-top: 6rem;
+  }
+
+}
