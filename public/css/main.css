@@ -27,13 +27,23 @@ background: linear-gradient( -135deg,#c850c0, #4158d0);
     padding: 0;
   }
 }
+
+img{
+width: 40%;
+margin: 20px;
+padding: 0;
+margin-left: 30%;
+height: auto;
+
+}
+
 .page {
   background: #e2e2e5;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   margin-left: 14%;
-  margin-top:5%;
+  margin-top:0;
   height: 70%;
   position: absolute;
   place-content: center;
@@ -70,6 +80,7 @@ background: linear-gradient( -135deg,#c850c0, #4158d0);
   top: 20px;
   position: relative;
   width: 50%;
+  padding: 10px;
 }
 @media (max-width: 767px) {
   .left {
